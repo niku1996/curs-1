@@ -1,10 +1,10 @@
 package house;
 
 public class Dog {
-    public static double weight;   //g
+    public static int weight;   //g
     public static String name;     //name of house.Dog
     public static int age;         //years
-    public Dog(String name, double weight, int age){
+    public Dog(String name, int weight, int age){
         this.weight = weight;
         this.name = name;
         this.age = age;
