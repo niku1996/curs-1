@@ -1,7 +1,7 @@
 package airborn;
 //base class / super
 public class airplane {
-    public int distance;
+    private int distance;
     private int fuel;
     public byte seates;
     public airplane() {
