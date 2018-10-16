@@ -3,8 +3,8 @@ package house;
 public class Dog {
     public static int weight;   //g
     public static String name;     //name of house.Dog
-    public static int age;         //years
-    public Dog(String name, int weight, int age){
+    public static int age;      //years
+    public Dog(String name, int weight, int age,String color){
         this.weight = weight;
         this.name = name;
         this.age = age;
