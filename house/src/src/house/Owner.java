@@ -5,6 +5,7 @@ public class Owner {
     public static int age;                      //years
     public static int food;                     //kg
     public static boolean have_food = true;     //if food is available
+    public static int count = 0;
     public void setFood(int food){
         Owner.food = 80;
         if (food>0){
@@ -15,7 +16,9 @@ public class Owner {
     }
     public static int getFood(int food){
         Owner.age++;
-        System.out.println("You give food to your dog");
+        Dog.weight += food;
+        Dog.age++;
+        System.out.println(" ########################\n You give food to your dog " + count + " time(s)");
         return Owner.food -= food;
     }
     public Owner(String fullname, int age, int food){

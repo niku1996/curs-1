@@ -15,9 +15,7 @@ public class Dog {
         return "Name " + name + " Weight " + weight + " grams" + " Age " + age + " years";
     }
 
-    public static void eat(int qauntity){
-        weight += qauntity * 0.1;
-        age++;
+    public static void eat(int food){
     }
 }
 
