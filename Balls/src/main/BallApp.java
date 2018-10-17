@@ -7,6 +7,8 @@ public class BallApp {
         BasketBall basketball = new BasketBall();
         PingBall pingBall = new PingBall();
         Rugby  rugby = new Rugby();
+        football.setVolume(20);
+        rugby.setVolume(8);
         System.out.println(football.toString() + basketball + pingBall + rugby);
     }
 }
