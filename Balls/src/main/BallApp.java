@@ -1,5 +1,4 @@
 package main;
-
 import Balls.*;
 
 public class BallApp {
