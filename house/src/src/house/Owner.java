@@ -16,7 +16,6 @@ public class Owner {
     }
     public static int getFood(int food){
         Owner.age++;
-        Dog.weight += food;
         Dog.age++;
         System.out.println(" ########################\n You give food to your dog " + count + " time(s)");
         return Owner.food -= food;

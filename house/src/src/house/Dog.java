@@ -16,6 +16,7 @@ public class Dog {
     }
 
     public static void eat(int food){
+
     }
 }
 
