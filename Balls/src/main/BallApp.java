@@ -9,6 +9,7 @@ public class BallApp {
         Rugby  rugby = new Rugby();
         football.setVolume(20);
         rugby.setVolume(8);
+        football.jump(100);
         System.out.println(football.toString() + basketball + pingBall + rugby);
     }
 }
