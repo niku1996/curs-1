@@ -14,10 +14,11 @@ public class SoftwareCompany {
 
     }
 
-    public void showMembers(){
-
+    public static void showMembers(){
+        System.out.println("Name " + " Job " + "     Experience " + "Salary \n" + "##################################");
+        System.out.println(Director.fullname + "| Director|" + Director.experience + "        |" + Director.salary);
     }
-    public int calculateSalaryBudget(){
-
-    }
+//    public int calculateSalaryBudget(){
+//
+//    }
 }
