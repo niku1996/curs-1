@@ -6,7 +6,8 @@ import business.SoftwareCompany;
 import team.Programmer;
 import team.Tester;
 
-import static business.Manager.quality_guy;
+import static business.Manager.*;
+
 public class main {
     public static void main(String[] args) {
         Director dir = new Director(20,40,9000);
@@ -15,7 +16,9 @@ public class main {
         Manager.junior_developer = new Programmer(2,18,700);
         quality_guy = new Tester(4,25,400);
         Director.helper = new Manager(8,34,600);
-        SoftwareCompany.calculateSalaryBudget();
+        Director.incrementSalary();
+        Manager.incrementSalary();
+        Programmer.incrementSalary();
         SoftwareCompany.showMembers();
     }
 }

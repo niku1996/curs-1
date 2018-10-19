@@ -4,10 +4,10 @@ import team.Programmer;
 import team.Tester;
 
 public class Manager {
-    public static String        fullname;
-    public static int           experience;
-    public static int           age;
-    public static float         salary;
+    static String               fullname;
+    static int                  experience;
+    private static int          age;
+    static float                salary;
     public static Programmer    lead_developer;
     public static Programmer    senior_developer;
     public static Programmer    junior_developer;
@@ -24,7 +24,7 @@ public class Manager {
     public String toString(){
         return  "Manager " + fullname + " Experience " + experience + " Have " + age + "years" + " and " + salary + "Salary";
     }
-    public void incrementSalary(){
+    public static void incrementSalary(){
         salary *= 0.15;
     }
 }

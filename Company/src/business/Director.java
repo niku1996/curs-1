@@ -17,7 +17,7 @@ public class Director {
     public String toString(){
         return  "Director " + fullname + " Experience " + experience + " Have " + age + "years" + " and " + salary + "Salary";
     }
-    public void incrementSalary(){
+    public static void incrementSalary(){
         salary *= 0.2;
     }
 }
