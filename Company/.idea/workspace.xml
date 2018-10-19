@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d87fbb3-0b64-4b37-9edf-724e805c669f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/business/SoftwareCompany.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/business/SoftwareCompany.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/team/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/team/Programmer.java" afterDir="false" />
-    </list>
+    <list default="true" id="4d87fbb3-0b64-4b37-9edf-724e805c669f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +13,7 @@
     <session id="1071684424">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.20" value="1" />
@@ -70,7 +63,7 @@
             <entry file="file://$PROJECT_DIR$/src/business/Manager.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="598">
-                  <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+                  <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#812#813#0" expanded="true" />
@@ -83,8 +76,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/team/Programmer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+                <state relative-caret-position="483">
+                  <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
                   <folding>
                     <element signature="e#690#691#0" expanded="true" />
                     <element signature="e#758#759#0" expanded="true" />
@@ -139,7 +132,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/main.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="552">
-                  <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -188,44 +181,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Company" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Company" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Company" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Company" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Company" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Company" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Company" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Company" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Company" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="team" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -298,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539956056237</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed Manager and Designer salary">
+      <created>1539967247542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1539967247542</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -312,7 +275,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="687" y="-7" width="1340" height="742" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23415765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -391,7 +353,7 @@
     <entry file="file://$PROJECT_DIR$/src/business/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
-          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#812#813#0" expanded="true" />
@@ -402,8 +364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/team/Programmer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="483">
+          <caret line="21" column="61" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
           <folding>
             <element signature="e#690#691#0" expanded="true" />
             <element signature="e#758#759#0" expanded="true" />
