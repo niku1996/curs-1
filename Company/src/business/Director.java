@@ -5,7 +5,7 @@ public class Director {
     public static int      experience;
     public static int      age;
     public static float    salary;
-    public Manager helper = new Manager(3,24,6000);
+    public static Manager         helper;
 
     public Director(int experience,int age,float salary ){
         fullname  = "Ion ";
