@@ -18,6 +18,6 @@ public class Director {
         return  "Director " + fullname + " Experience " + experience + " Have " + age + "years" + " and " + salary + "Salary";
     }
     public void incrementSalary(){
-        salary += 20;
+        salary *= 0.2;
     }
 }

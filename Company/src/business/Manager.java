@@ -25,6 +25,6 @@ public class Manager {
         return  "Manager " + fullname + " Experience " + experience + " Have " + age + "years" + " and " + salary + "Salary";
     }
     public void incrementSalary(){
-        salary += 15;
+        salary *= 0.15;
     }
 }
