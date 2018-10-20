@@ -3,17 +3,20 @@ public class MiniFBApp {
        User my_user = new User("Maxim");
        User close_user = new User("Florin");
        User common_user = new User("Gicu");
+       BackPack backpack = new BackPack("Puma");
        my_user.addCloseFriend(close_user);
        my_user.addCommonFriend(common_user);
        System.out.println(my_user);
-        System.out.println("FB users : " + User.total);
-
+       System.out.println("FB users : " + User.total);
+       my_user.putAccesorie(backpack);
     }
 }
+
 class User{
     static int total = 0;
     String name;
     int friends_count;
+    Accesories new_accesorie = null;
 
     //Relations
     User close_friend;
@@ -34,7 +37,9 @@ class User{
         this.common_friend = cf;
         this.friends_count++;
     }
-
+    void putAccesorie(Accesories a){
+        this.new_accesorie = a;
+    }
     //if/esle  ?: -> null
     //fix that
 

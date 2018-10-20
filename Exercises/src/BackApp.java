@@ -7,12 +7,10 @@ public class BackApp {
         my_sac.addThing(laptop);
         my_sac.addThing(manual);
         System.out.println(my_sac);
-        my_sac.removeThing(laptop);
-        System.out.println(my_sac);
         //Tepochka
     }
 }
-class BackPack{
+class BackPack extends Accesories{
     String brand;
     float volume;
     byte pockets;
@@ -56,4 +54,7 @@ class book extends Thing{
     public book(String title){
         this.title = title;
     }
+}
+class Accesories{
+
 }
