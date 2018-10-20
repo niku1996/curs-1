@@ -3,8 +3,11 @@ public class BackApp {
         BackPack my_sac     = new BackPack(" XM");
         Laptop   laptop     = new Laptop(" Apple");
         book     manual     = new book(" How not to brake Apple laptop");
+        System.out.println(my_sac);
         my_sac.addThing(laptop);
         my_sac.addThing(manual);
+        System.out.println(my_sac);
+        my_sac.removeThing(laptop);
         System.out.println(my_sac);
         //Tepochka
     }
@@ -33,7 +36,11 @@ class BackPack{
         this.thing_section = t;
     }
     public String toString(){
-        return "BackPack (brand = " + brand + ", volume = " + volume + ", pockets = " + pockets + ", sections = " + sections + ")";
+        return "BackPack (brand = " + brand + ", volume = " + volume + ", pockets = " + pockets + ", sections = " + sections + ")"
+                + " Things " + thing_section;
+    }
+    void removeThing(Thing t){
+        this.thing_section = null;
     }
 }
 class Thing{
