@@ -10,7 +10,7 @@ public class BackApp {
         //Tepochka
     }
 }
-class BackPack extends Accesories{
+class BackPack extends Accessories{
     String brand;
     float volume;
     byte pockets;
@@ -55,6 +55,6 @@ class book extends Thing{
         this.title = title;
     }
 }
-class Accesories{
+class Accessories{
 
 }

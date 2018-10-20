@@ -16,7 +16,7 @@ class User{
     static int total = 0;
     String name;
     int friends_count;
-    Accesories new_accesorie = null;
+    Accessories new_accessorie = null;
 
     //Relations
     User close_friend;
@@ -37,8 +37,8 @@ class User{
         this.common_friend = cf;
         this.friends_count++;
     }
-    void putAccesorie(Accesories a){
-        this.new_accesorie = a;
+    void putAccesorie(Accessories a){
+        this.new_accessorie = a;
     }
     //if/esle  ?: -> null
     //fix that
