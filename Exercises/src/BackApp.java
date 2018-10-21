@@ -7,6 +7,7 @@ public class BackApp {
         my_sac.addThing(laptop);
         my_sac.addThing(manual);
         System.out.println(my_sac);
+        my_sac.removeThing(laptop);
         //Tepochka
     }
 }
