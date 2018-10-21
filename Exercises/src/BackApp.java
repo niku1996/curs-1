@@ -2,7 +2,7 @@ public class BackApp {
     public static void main(String[] args) {
         BackPack my_sac     = new BackPack(" XM");
         Laptop   laptop     = new Laptop(" Apple");
-        book     manual     = new book(" How not to brake Apple laptop");
+        Book     manual     = new Book(" How not to brake Apple laptop");
         System.out.println(my_sac);
         my_sac.addThing(laptop);
         my_sac.addThing(manual);
@@ -50,9 +50,9 @@ class Laptop extends Thing{
         this.brand = brand;
     }
 }
-class book extends Thing{
+class Book extends Thing{
     String title;
-    public book(String title){
+    public Book(String title){
         this.title = title;
     }
 }
