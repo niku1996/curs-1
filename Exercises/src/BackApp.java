@@ -38,6 +38,10 @@ class BackPack extends Accessories{
     void addBook(Book t){
         this.book_section = t;
     }
+    void removeLaptop(Laptop t){
+        this.note_section = null;
+    }
+
     public String toString(){
         return "BackPack (brand = " + brand + ", volume = " + volume + ", pockets = " + pockets + ", sections = " + sections + ")";
     }
