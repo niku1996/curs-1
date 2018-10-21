@@ -9,6 +9,9 @@ public class MiniFBApp {
        System.out.println(my_user);
        System.out.println("FB users : " + User.total);
        my_user.putAccesorie(backpack);
+       System.out.println(my_user);
+       my_user.removeAccesorie(backpack);
+       System.out.println(my_user);
     }
 }
 
@@ -40,11 +43,16 @@ class User{
     void putAccesorie(Accessories a){
         this.new_accessorie = a;
     }
+    void removeAccesorie(Accessories a){
+        this.new_accessorie = null;
+    }
     //if/esle  ?: -> null
     //fix that
-
     public String toString(){
         return "\n\n User : (" + this.name + ")" + "\n friends : (" + this.friends_count +
                 ")\n Friends " + close_friend + common_friend;
     }
+}
+class Accessories{
+
 }

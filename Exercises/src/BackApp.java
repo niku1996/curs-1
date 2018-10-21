@@ -56,6 +56,3 @@ class book extends Thing{
         this.title = title;
     }
 }
-class Accessories{
-
-}
