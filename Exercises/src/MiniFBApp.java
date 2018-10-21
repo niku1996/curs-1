@@ -6,9 +6,8 @@ public class MiniFBApp {
        BackPack backpack = new BackPack("Puma");
        my_user.addCloseFriend(close_user);
        my_user.addCommonFriend(common_user);
-       System.out.println(my_user);
        System.out.println("FB users : " + User.total);
-       my_user.putAccesorie(backpack);
+       my_user.putAccessorie(backpack);
        System.out.println(my_user);
        my_user.removeAccesorie(backpack);
        System.out.println(my_user);
@@ -19,6 +18,7 @@ class User{
     static int total = 0;
     String name;
     int friends_count;
+
     Accessories new_accessorie = null;
 
     //Relations
@@ -40,7 +40,7 @@ class User{
         this.common_friend = cf;
         this.friends_count++;
     }
-    void putAccesorie(Accessories a){
+    void putAccessorie(Accessories a){
         this.new_accessorie = a;
     }
     void removeAccesorie(Accessories a){
@@ -50,9 +50,8 @@ class User{
     //fix that
     public String toString(){
         return "\n\n User : (" + this.name + ")" + "\n friends : (" + this.friends_count +
-                ")\n Friends " + close_friend + common_friend;
+                "\n Friends " + close_friend + common_friend + " Accessories " + new_accessorie + ")";
     }
 }
 class Accessories{
-
 }

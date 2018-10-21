@@ -2,12 +2,11 @@ public class BackApp {
     public static void main(String[] args) {
         BackPack my_sac     = new BackPack(" XM");
         Laptop   laptop     = new Laptop(" Apple");
-        Book     manual     = new Book(" How not to brake Apple laptop");
+        Book     manual     = new Book(" ,,How not to brake Apple laptop,,");
+        my_sac.addLaptop(laptop);
+        my_sac.addBook(manual);
         System.out.println(my_sac);
-        my_sac.addThing(laptop);
-        my_sac.addThing(manual);
-        System.out.println(my_sac);
-        my_sac.removeThing(laptop);
+        System.out.println("Acessories : " + "Laptop => " + laptop.brand + ";  Book => " + manual.title);
         //Tepochka
     }
 }
@@ -17,10 +16,9 @@ class BackPack extends Accessories{
     byte pockets;
     byte sections;
 
-//    Laptop note_section = null;
-//    book book_section = null;
-
-    Thing thing_section = null;
+    Laptop note_section;
+    Book book_section;
+    Thing thing_section;
 
     // add put() and remove()
 
@@ -34,9 +32,14 @@ class BackPack extends Accessories{
     void addThing(Thing t){
         this.thing_section = t;
     }
+    void addLaptop(Laptop t){
+        this.note_section = t;
+    }
+    void addBook(Book t){
+        this.book_section = t;
+    }
     public String toString(){
-        return "BackPack (brand = " + brand + ", volume = " + volume + ", pockets = " + pockets + ", sections = " + sections + ")"
-                + " Things " + thing_section;
+        return "BackPack (brand = " + brand + ", volume = " + volume + ", pockets = " + pockets + ", sections = " + sections + ")";
     }
     void removeThing(Thing t){
         this.thing_section = null;
