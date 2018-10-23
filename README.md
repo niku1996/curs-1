@@ -1,2 +1,2 @@
 # Curs
-Toate proiectele din timpu cursului
+Toate proiectele din timpul cursului
