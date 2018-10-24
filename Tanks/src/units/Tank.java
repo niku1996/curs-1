@@ -8,11 +8,13 @@ public class Tank {
     public byte     x;
     public byte     y;
 
-    public Tank(String player ,byte damage,byte armour,byte projectiles){
+    public Tank(String player ,int damage,int armour,int projectiles,int x,int y){
         this.player = player;
-        this.damage = damage;
-        this.armour = armour;
-        this.projectiles = projectiles;
+        this.damage =(byte) damage;
+        this.armour = (byte )armour;
+        this.projectiles =(byte) projectiles;
+        this.x = (byte)x;
+        this.x = (byte)y;
 
     }
     public boolean isFunctional(){
@@ -22,11 +24,11 @@ public class Tank {
             return false;
         }
     }
-    public double DistanceOtherTank(x,y){
+    public double DistanceOtherTank(int x,int  y){
         return Math.sqrt((Math.pow((this.x-x),2))+(Math.pow((this.y-y),2)));
     }
 
     public String toString(){
-        return " Tank Armour is " + armour + " And coordinates are : x = " + x + " y " + y;
+        return " Tank Armour is " + armour + " And coordinates are : x = " + x + " y = " + y;
     }
 }

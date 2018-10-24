@@ -29,13 +29,13 @@ class BackPack extends Accessories{
         this.sections = 2;
     }
 
-    void addThing(Thing t){
+    void addThing(Thing t) {
         this.thing_section = t;
     }
-    void addLaptop(Laptop t){
+    void addLaptop(Laptop t) {
         this.note_section = t;
     }
-    void addBook(Book t){
+    void addBook(Book t) {
         this.book_section = t;
     }
     void removeLaptop(Laptop t){

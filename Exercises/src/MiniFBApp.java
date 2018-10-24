@@ -13,7 +13,6 @@ public class MiniFBApp {
        System.out.println(my_user);
     }
 }
-
 class User{
     static int total = 0;
     String name;
