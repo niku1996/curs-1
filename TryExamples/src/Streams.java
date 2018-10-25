@@ -1,5 +1,4 @@
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,13 +18,16 @@ public class Streams {
         System.out.println("Lastname: ");
         lastname = in.next();
         System.out.println("Age: ");
-
         try{
             age = in.nextInt();
             System.out.println("Data: " + firstname + "\n" + lastname + "\n" + age);
             FileWriter fw = new FileWriter("/home/krypt0n/Documents/data.txt");
-             fw.write(firstname + "" + lastname + "" + age);
-             fw.close();
+            Scanner fr = new Scanner(new File("/home/krypt0n/Documents/data.txt"));
+            fw.write(firstname + "" + lastname + "" + age);
+            fw.close();
+            System.out.println("Reading");
+            String name = fr.next();
+            System.out.println("Content in file " + name);
         }catch(InputMismatchException e){
             System.out.println("Error");
         } catch (IOException e) {
