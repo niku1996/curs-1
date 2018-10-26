@@ -20,21 +20,19 @@ public class Streams {
         System.out.println("Age: ");
         try{
             age = in.nextInt();
-            System.out.println("Data: " + firstname + "\n" + lastname + "\n" + age);
+            System.out.println("Data: " + firstname + " \n" + lastname + " \n" + age);
             FileWriter fw = new FileWriter("/home/krypt0n/Documents/data.txt");
             Scanner fr = new Scanner(new File("/home/krypt0n/Documents/data.txt"));
-            fw.write(firstname + "" + lastname + "" + age);
+            fw.write(firstname + " " + lastname + " " + age);
             fw.close();
             System.out.println("Reading");
-            String name = fr.next();
-            System.out.println("Content in file " + name);
-        }catch(InputMismatchException e){
+            String name = fr.nextLine();
+            System.out.println("Content in file: " + name);
+        }catch (InputMismatchException e){
             System.out.println("Error");
-        } catch (IOException e) {
+        }catch (IOException e) {
             System.err.println("File error");
         }
         //save to file
-
-
     }
 }
