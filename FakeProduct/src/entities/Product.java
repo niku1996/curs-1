@@ -2,6 +2,9 @@ package entities;
 
 import com.github.javafaker.Faker;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Date;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
@@ -31,6 +34,17 @@ public class Product {
 
     }
     public String toString(){
-        return "Product category: " + category + " Name: " + name + " Price: " + price + " Manufacturer: " + manufacture + " Date: " + expires;
+        return "Product category: " + category + " Name: " + name + "\n Price: " + price + "\n Manufacturer: " + manufacture + "\n Date: " + expires;
+    }
+    public void saveToFile(String file_name){
+        try{
+            FileWriter fw = new FileWriter(new File(file_name));
+            fw.write(this.toString());
+            fw.close();
+        }catch (IOException e){
+            e.printStackTrace();
+            System.err.println("File Error");
+        }
+
     }
 }
