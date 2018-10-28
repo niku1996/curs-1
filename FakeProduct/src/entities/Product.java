@@ -10,6 +10,7 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 public class Product {
+    public static String product;
     String category;
     String name;
     String manufacture;
@@ -32,6 +33,19 @@ public class Product {
             this.price = price;
             this.manufacture = manufacture;
 
+    }
+    public static void createProduct(){
+        Product p = new Product();
+    }
+    public static void saveProduct(String file){
+        try {
+            FileWriter fw = new FileWriter(new File(file));
+            fw.write();
+            fw.close();
+        }catch (IOException e){
+            System.err.println("File Error\n");
+            e.printStackTrace();
+        }
     }
     public String toString(){
         return "Product category: " + category + " Name: " + name + "\n Price: " + price + "\n Manufacturer: " + manufacture + "\n Date: " + expires;

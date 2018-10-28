@@ -1,11 +1,30 @@
 package main;
 
 import entities.Product;
-
-import java.util.Date;
+import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Product.product = sc.next();
+
+        while(true){
+            System.out.println("###############\n" +
+                    "           MENU\n" +
+                    "           ###############" +
+                    "           Please,select what you want to do;" +
+                    "           Create a product;" +
+                    "           Save to a file;" +
+                    "           Load from a file;" +
+                    "           Or exit");
+
+            switch (Product.product){
+                case "Create a product" : Product.createProduct();
+                case "Save to a file"   : Product.saveProduct("/home/krypt0n/IdeaProjects/FakeProduct/src/newProduct.txt");
+                case "Load from a file" : 
+            }
+
+        }
 
         // while(){
         //Menu
@@ -21,8 +40,5 @@ public class Application {
 //                              "Coca inc.",
 //                                           new Date()
 //        );
-        Product p = new Product();
-        System.out.println(p);
-        p.saveToFile("/home/krypt0n/IdeaProjects/FakeProduct/src/product.txt");
     }
 }
