@@ -25,7 +25,6 @@ public class Product {
         this.manufacture = f.chuckNorris().fact();
         this.expires = f.date().future(100,TimeUnit.DAYS);
     }
-
     public Product(String category, String name, float price, String manufacture){
             this.category = category;
             this.name = name;
@@ -37,7 +36,7 @@ public class Product {
         Scanner sc = new Scanner(System.in);
         String product;
         product = sc.next();
-        if (product.equals("Create")){
+        if (product.equalsIgnoreCase("Create")){
             System.out.println("Created new Product!!!");
             Product p = new Product();
             count++;
