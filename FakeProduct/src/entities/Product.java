@@ -36,7 +36,7 @@ public class Product {
         Scanner sc = new Scanner(System.in);
         String product;
         product = sc.next();
-        if (product.equalsIgnoreCase("Create")){
+        if (product.equals("Create a product")){
             System.out.println("Created new Product!!!");
             Product p = new Product();
             count++;
@@ -47,8 +47,7 @@ public class Product {
                 product = sc.next();
             }else {
                 System.out.println("Didn't saved");
-            }
-            if (product.matches("Load")){
+            }if (product.matches("Load")){
                 p.loadProduct("/home/krypt0n/IdeaProjects/FakeProduct/src/savedProduct.txt");
                 System.out.println("Loaded!!!");
             }else {
